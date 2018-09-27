@@ -154,6 +154,8 @@
     <ClCompile Include="src\QCELPAudioRTPSource.cpp" />
     <ClCompile Include="src\QuickTimeFileSink.cpp" />
     <ClCompile Include="src\QuickTimeGenericRTPSource.cpp" />
+    <ClCompile Include="src\RawVideoRTPSink.cpp" />
+    <ClCompile Include="src\RawVideoRTPSource.cpp" />
     <ClCompile Include="src\RTCP.cpp" />
     <ClCompile Include="src\rtcp_from_spec.c" />
     <ClCompile Include="src\RTPInterface.cpp" />
@@ -414,6 +416,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
